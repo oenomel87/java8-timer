@@ -43,6 +43,7 @@ class Timer extends Thread {
     public static void main (String[] args) {
         int initialDelay = 0;
         int period = 5;
-        Executors.newScheduledThreadPool(1).scheduleAtFixedRate(new Timer(args[0]), initialDelay, period, TimeUnit.SECONDS);
+        Executors.newScheduledThreadPool(1)
+                 .scheduleAtFixedRate(new Timer(args[0]), initialDelay, period, TimeUnit.SECONDS);
     }
 }
